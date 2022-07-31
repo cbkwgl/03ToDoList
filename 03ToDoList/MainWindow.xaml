@@ -1,0 +1,16 @@
+﻿<Window x:Class="_03ToDoList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_03ToDoList"
+        mc:Ignorable="d"
+        Title="ToDo App" Height="450" Width="800">
+    <Grid Height="420" Width="800">
+        <ListBox Name="lbxTasks" Background="#FFE2D9D9" Margin="10,10,546,0" SelectionChanged="ListBox_SelectionChanged"/>
+        <TextBox Name="txbInput" HorizontalAlignment="Left" FontSize ="24" Margin="282,10,0,0" TextWrapping="Wrap" Text="Enter a Task" VerticalAlignment="Top" Width="410" Background="#FFCAC6C6" Height="48" RenderTransformOrigin="0.784,0.391" KeyDown="txbInput_KeyDown"/>
+        <Button Name="btnButton_Add" Content="Add New Task" IsEnabled="False" HorizontalAlignment="Left" Margin="314,84,0,0" VerticalAlignment="Top" Height="31" Width="98" Click="btnButton_Add_Click"/>
+        <Button x:Name="btnButton_Delete" Content="Delete" IsEnabled="False" HorizontalAlignment="Left" Margin="487,84,0,0" VerticalAlignment="Top" Height="31" Width="98" Click="btnButton_Delete_Click"/>
+
+    </Grid>
+</Window>
